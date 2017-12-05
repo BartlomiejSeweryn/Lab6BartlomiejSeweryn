@@ -3,6 +3,7 @@
 /// your name here or no marks
 /// </summary>
 #include "MyVector3.h"
+#include <string.h>
 #define PI           3.14159265358979323846
 
 /// <summary>

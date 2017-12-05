@@ -1,8 +1,9 @@
-// <summary>
-/// small main program to test vector class
-/// included are some test to aid in writing correct methods
-/// and some for grading existing methods, you need to work on
-/// the former.
+/// <summary>
+/// Your name here
+/// estimate
+/// time spent
+/// issues
+/// 
 /// </summary>
 #ifdef _DEBUG 
 #pragma comment(lib,"sfml-graphics-d.lib") 
@@ -21,7 +22,7 @@
 
 #include "MyVector3.h"
 #include <SFML\Graphics.hpp>
-#include <string.h>
+#include <string>
 
 
 
@@ -29,6 +30,14 @@
 
 int main()
 {
+	MyVector3 vectorOne{};
+
+	std::cout << vectorOne.toString() << std::endl;
+	std::cout << "Null / default constructor" << std::endl;
+	std::cout << "----------------------------" << std::endl;
+	
+	
+	
 	std::system("pause");
 	return EXIT_SUCCESS;
 }
