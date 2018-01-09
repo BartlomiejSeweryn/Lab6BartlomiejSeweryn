@@ -22,39 +22,39 @@ public:
 	std::string toString();
 
 
-	//MyVector3(double x, double y, double z);
-	//MyVector3(sf::Vector3f t_sfVector);
-	//MyVector3(sf::Vector3i t_sfVector);
-	//MyVector3(sf::Vector2i t_sfVector);
-	//MyVector3(sf::Vector2u t_sfVector);
-	//MyVector3(sf::Vector2f t_sfVector); 
+	MyVector3(double x, double y, double z);
+	MyVector3(sf::Vector3f t_sfVector);
+	MyVector3(sf::Vector3i t_sfVector);
+	MyVector3(sf::Vector2i t_sfVector);
+	MyVector3(sf::Vector2u t_sfVector);
+	MyVector3(sf::Vector2f t_sfVector); 
 	
-	//bool operator == (const MyVector3 t_right) const;
-	//bool operator != (const MyVector3 t_right) const;
+	bool operator == (const MyVector3 t_right) const;
+	bool operator != (const MyVector3 t_right) const;
 
 
-	//MyVector3 operator +(const MyVector3 t_right) const;
-	//MyVector3 operator -(const MyVector3 t_right) const;
-	//MyVector3 operator *(const double t_scalar) const;
-	//MyVector3 operator /(const double t_divisor) const;
-	//MyVector3 operator +=(const MyVector3 t_right);
-	//MyVector3 operator -=(const MyVector3 t_right);
+	MyVector3 operator +(const MyVector3 t_right) const;
+	MyVector3 operator -(const MyVector3 t_right) const;
+	MyVector3 operator *(const double t_scalar) const;
+	MyVector3 operator /(const double t_divisor) const;
+	MyVector3 operator +=(const MyVector3 t_right);
+	MyVector3 operator -=(const MyVector3 t_right);
 
 	
 	// negative of a vector 
-	//MyVector3 operator -();
+	MyVector3 operator -();
 	
 
-	//double length()const;
-	//double lengthSquared()const;
-	//double dot(const MyVector3 t_other) const;
-	//MyVector3 crossProduct(const MyVector3 t_other)const;
-	//double angleBetween(const MyVector3 t_other)const;
-	//MyVector3 unit() const;
-	//void normalise();
-	//MyVector3 projection(const MyVector3 t_other)const;
+	double length()const;
+	double lengthSquared()const;
+	double dot(const MyVector3 t_other) const;
+	MyVector3 crossProduct(const MyVector3 t_other)const;
+	double angleBetween(const MyVector3 t_other)const;
+	MyVector3 unit() const;
+	void normalise();
+	MyVector3 projection(const MyVector3 t_other)const;
 	// projection of other onto the current vector so answer will parralell to current vector.
-	//MyVector3 rejection(const MyVector3 t_other)const;
+	MyVector3 rejection(const MyVector3 t_other)const;
 
 
 	//operator sf::Vector2f() { return sf::Vector2f{ }; }; 
